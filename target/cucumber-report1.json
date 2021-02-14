@@ -1,0 +1,164 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Validate First Name field",
+        "description": "",
+        "id": "create-account-of-facebook;validate-first-name-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14771627500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User need to be on Facebook login page",
+            "match": {
+              "location": "ShareDataStepDef.user_need_to_be_on_Facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1517800800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters user \"Luis\" first name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Luis",
+                  "offset": 18
+                }
+              ],
+              "location": "ShareDataStepDef.user_enters_user_first_name(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1100225300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User checks user \"Luis\" first name is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Luis",
+                  "offset": 18
+                }
+              ],
+              "location": "ShareDataStepDef1.user_checks_user_first_name_is_present(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 8,
+            "value": "#Then close browser : si hay tag @after"
+          }
+        ],
+        "line": 10,
+        "name": "Validate create user multiple fields",
+        "description": "",
+        "id": "create-account-of-facebook;validate-create-user-multiple-fields",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7891417400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User need to be on Facebook login page",
+            "match": {
+              "location": "ShareDataStepDef.user_need_to_be_on_Facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1164795100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enters user \"Joan\" first name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Joan",
+                  "offset": 18
+                }
+              ],
+              "location": "ShareDataStepDef.user_enters_user_first_name(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1126928400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters user \"Brown\" surname",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brown",
+                  "offset": 18
+                }
+              ],
+              "location": "ShareDataStepDef1.user_enters_user_surname(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1055029400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User checks user \"Joan\" first name is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Joan",
+                  "offset": 18
+                }
+              ],
+              "location": "ShareDataStepDef1.user_checks_user_first_name_is_present(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1071410400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User Mobile field should be blank",
+            "match": {
+              "location": "ShareDataStepDef1.user_mobile_field_should_be_blank()"
+            },
+            "keyword": "But "
+          }
+        ]
+      }
+    ],
+    "name": "Create account of Facebook",
+    "description": "As a user u need to open facebook home page and do the validations",
+    "id": "create-account-of-facebook",
+    "keyword": "Feature",
+    "uri": "ShareFF.feature"
+  }
+]
